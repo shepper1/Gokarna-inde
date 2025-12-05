@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokarna: Évasion Spirituelle et Plages Secrètes du Karnataka </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        template: {
+                            sable: '#F3E5AB',
+                            ocre: '#C66B3D',
+                            roche: '#2D2A26',
+                            ciel: '#4A6C6F',
+                            bg: '#FAFAF9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #C66B3D;
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">Gokarna: Évasion Spirituelle et Plages Secrètes du Karnataka</a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Départ de Paris</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Arrivée à Gokarna et immersion douce</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Les plages emblématiques de Gokarna</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Spiritualité et culture locale</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Bien-être et saveurs locales</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Excursion aux grottes de Yana</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Histoire et cascades</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Croisière et détente côtière</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Activités nautiques et plage de Kudle</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Journée libre et souvenirs</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Retour vers Goa</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Vol retour vers Paris</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[85vh] flex items-center justify-center overflow-hidden pt-12 md:pt-0">
+        
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+        <video autoplay muted loop playsinline 
+               poster="https://images.unsplash.com/photo-1579606946838-6db34433f3c0?q=80&w=2070"
+               class="absolute inset-0 w-full h-full object-cover">
+            <source src="https://videos.pexels.com/video-files/4456988/4456988-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.3em] mb-4 uppercase text-sm font-semibold">Feuille de Route</p>
+            <h1 class="font-Playfair italic text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">Gokarna inde</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-light max-w-2xl mx-auto leading-relaxed">Gokarna: Évasion Spirituelle et Plages Secrètes du Karnataka</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🗓️ 12 jours uniquement</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">💰 2100€ / pers</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🛬 Environ 10-12h de vol depuis Paris</span>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-20 relative">
+        
+        <div class="text-center mb-16">
+            <span class="text-template-ocre font-bold tracking-widest text-xs uppercase">Le Roadtrip</span>
+            <h2 class="font-serif text-4xl mt-2 text-template-roche">Votre Programme</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de Paris</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Votre aventure indienne commence à l'aéroport de Paris. Préparez-vous pour un long vol vers l'Inde, une transition douce vers un monde de couleurs et de spiritualité. Profitez du voyage pour vous imprégner de l'excitation du départ.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>✈️ <strong>Vol Paris-Goa</strong>: Embarquez pour votre vol international depuis Paris, direction l'aéroport de Goa (Dabolim), porte d'entrée vers le sud de l'Inde.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Formalités</p>
+                                <p class="text-gray-700">Assurez-vous d'avoir votre visa indien (e-Visa est le plus courant) et votre passeport valides avant le départ.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Gokarna et immersion douce</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après votre arrivée à Goa, un transfert vous mènera à Gokarna, une ville côtière sacrée. Prenez le temps de vous installer et de ressentir l'atmosphère paisible. Une première balade légère sur la plage vous permettra de vous acclimater et de vous imprégner de la sérénité locale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🚗 <strong>Transfert Goa-Gokarna</strong>: Après l'atterrissage à Goa, un taxi ou un bus vous conduira à Gokarna, un trajet d'environ 3 heures offrant déjà un aperçu des paysages du Karnataka.</li>
+                            
+                                <li>🛏️ <strong>Installation et détente</strong>: Installez-vous dans votre hébergement et prenez un moment pour vous reposer et vous rafraîchir après le voyage.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Conseil</p>
+                                <p class="text-gray-700">Négociez toujours le prix des taxis et tuk-tuks avant de monter. Les applications comme Ola ou Uber sont parfois disponibles dans les grandes villes.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💧 Hydratation</p>
+                                <p class="text-gray-700">Buvez beaucoup d'eau en bouteille pour rester hydraté, surtout les premiers jours pour s'adapter au climat.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Les plages emblématiques de Gokarna</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez les plages iconiques de Gokarna, accessibles par de petits sentiers côtiers ou en bateau. Chaque plage offre une ambiance unique, de la forme sacrée d'Om Beach aux criques isolées de Half Moon et Paradise Beach. Une journée de marche et de baignade vous attend.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🚶‍♀️ <strong>Trek des plages</strong>: Partez en randonnée de Om Beach à Half Moon Beach, puis à Paradise Beach, en empruntant les sentiers côtiers offrant des vues spectaculaires sur la mer d'Arabie.</li>
+                            
+                                <li>🧘‍♀️ <strong>Baignade et relaxation</strong>: Profitez des eaux calmes pour une baignade rafraîchissante et détendez-vous sur le sable doré de ces plages préservées.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Équipement</p>
+                                <p class="text-gray-700">Prévoyez de bonnes chaussures de marche pour le trek entre les plages et de la crème solaire biodégradable.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗺️ Navigation</p>
+                                <p class="text-gray-700">Les sentiers peuvent être un peu rudes, mais sont bien indiqués. Vous pouvez aussi opter pour un bateau-taxi entre les plages.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Spiritualité et culture locale</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez au cœur de la spiritualité de Gokarna en visitant le célèbre temple de Mahabaleshwar, un lieu de pèlerinage hindou. Explorez ensuite le centre-ville animé et le Koti Teertha, un bassin sacré. Une journée riche en découvertes culturelles et religieuses.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🙏 <strong>Visite du Temple Mahabaleshwar</strong>: Explorez ce temple millénaire dédié à Shiva, l'un des sept Mukti Sthalas (lieux de libération) du Karnataka, et observez les rituels quotidiens.</li>
+                            
+                                <li>🚶‍♂️ <strong>Découverte du centre-ville et Koti Teertha</strong>: Flânez dans les rues étroites du marché, imprégnez-vous de l'ambiance locale et visitez le Koti Teertha, un grand bassin sacré entouré de petits temples.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👗 Tenue</p>
+                                <p class="text-gray-700">Pour la visite des temples, prévoyez des vêtements couvrant les épaules et les genoux par respect pour les lieux sacrés.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photographie</p>
+                                <p class="text-gray-700">Demandez toujours la permission avant de photographier des personnes, surtout dans les lieux de culte.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Bien-être et saveurs locales</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Gokarna est aussi un lieu propice au bien-être. Participez à une séance de yoga matinale pour harmoniser corps et esprit, puis explorez les saveurs de la cuisine indienne avec un cours de cuisine. Une journée pour nourrir l'âme et les papilles.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🧘‍♀️ <strong>Cours de yoga matinal</strong>: Commencez votre journée par une séance de yoga sur la plage ou dans un ashram, profitant du calme matinal et de la brise marine.</li>
+                            
+                                <li>🌶️ <strong>Cours de cuisine indienne</strong>: Apprenez à préparer des plats locaux végétariens et épicés, une immersion délicieuse dans la culture culinaire du Karnataka.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🥦 Alimentation</p>
+                                <p class="text-gray-700">Gokarna est majoritairement végétarienne, avec une abondance de plats délicieux et sains. N'hésitez pas à goûter les thalis locaux.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💸 Pourboires</p>
+                                <p class="text-gray-700">Le pourboire n'est pas obligatoire mais apprécié dans les restaurants et pour les services. Quelques roupies suffisent.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Excursion aux grottes de Yana</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aventurez-vous hors des sentiers battus pour une excursion aux mystérieuses grottes de Yana. Ces formations rocheuses calcaires, entourées d'une dense forêt, sont un spectacle naturel impressionnant et un lieu de pèlerinage. Une journée d'exploration au cœur de la nature.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🚗 <strong>Route vers Yana</strong>: Louez un scooter ou un taxi pour une journée d'excursion vers Yana, un trajet pittoresque à travers la campagne du Karnataka.</li>
+                            
+                                <li>🪨 <strong>Exploration des grottes de Yana</strong>: Admirez les deux immenses monolithes de roche noire, Bhairaveshwara Shikara et Mohini Shikara, et explorez les grottes sacrées qui s'y trouvent.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⚠️ Accessibilité</p>
+                                <p class="text-gray-700">L'accès aux grottes implique une petite marche en forêt, prévoyez des chaussures confortables et de l'eau.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛵 Location de scooter</p>
+                                <p class="text-gray-700">La location d'un scooter est un excellent moyen d'explorer les environs, mais soyez vigilant sur les routes indiennes.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Histoire et cascades</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée vous emmène à la découverte de l'histoire locale avec le fort de Mirjan, un vestige architectural fascinant. Ensuite, rafraîchissez-vous aux chutes d'Apsarakonda, un lieu paisible et verdoyant, idéal pour une pause nature. Un mélange parfait d'histoire et de beauté naturelle.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🏰 <strong>Visite du Fort de Mirjan</strong>: Explorez les ruines de ce fort historique du 16ème siècle, témoin de la riche histoire de la région et offrant une atmosphère sereine.</li>
+                            
+                                <li>💧 <strong>Détente aux chutes d'Apsarakonda</strong>: Profitez de la fraîcheur des cascades et du petit bassin naturel pour une baignade ou simplement un moment de détente au milieu de la verdure.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌳 Nature</p>
+                                <p class="text-gray-700">Les environs d'Apsarakonda sont parfaits pour une courte promenade et l'observation de la faune locale.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Protection</p>
+                                <p class="text-gray-700">Le soleil peut être intense, n'oubliez pas chapeau, lunettes de soleil et protection solaire.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Croisière et détente côtière</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez d'une journée plus relaxante en explorant la côte de Gokarna depuis la mer. Une croisière au coucher du soleil vous offrira des vues imprenables et peut-être même l'occasion d'apercevoir des dauphins. Terminez la journée par un dîner les pieds dans le sable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>⛵ <strong>Croisière au coucher du soleil</strong>: Embarquez pour une croisière relaxante le long de la côte, admirant les plages depuis un autre angle et cherchant les dauphins qui nagent parfois dans ces eaux.</li>
+                            
+                                <li>🍽️ <strong>Dîner sur la plage</strong>: Savourez un délicieux repas de fruits de mer frais dans l'un des nombreux shacks de plage, les pieds dans le sable, sous les étoiles.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🐬 Observation</p>
+                                <p class="text-gray-700">Les meilleures chances d'apercevoir des dauphins sont tôt le matin ou au coucher du soleil.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💰 Négociation</p>
+                                <p class="text-gray-700">N'hésitez pas à négocier le prix de la croisière avec les pêcheurs locaux pour obtenir le meilleur tarif.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Activités nautiques et plage de Kudle</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">La plage de Kudle, avec son ambiance décontractée, est parfaite pour une journée d'activités nautiques ou simplement pour se prélasser. Essayez le paddle ou le kayak, ou laissez-vous tenter par un massage ayurvédique. Une journée dédiée au plaisir et à la détente au bord de l'eau.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🛶 <strong>Paddle ou Kayak à Kudle Beach</strong>: Louez un paddle ou un kayak pour explorer les eaux calmes de Kudle Beach, une activité amusante et rafraîchissante.</li>
+                            
+                                <li>💆‍♀️ <strong>Massage Ayurvédique</strong>: Offrez-vous un massage ayurvédique traditionnel dans l'un des centres de bien-être de la plage, pour une relaxation profonde et une revitalisation.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌊 Sécurité</p>
+                                <p class="text-gray-700">Assurez-vous que l'équipement de sports nautiques est en bon état et que les conditions de mer sont calmes avant de vous aventurer.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Heures de pointe</p>
+                                <p class="text-gray-700">Kudle Beach est très populaire, arrivez tôt le matin pour profiter du calme avant la foule.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Journée libre et souvenirs</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de cette dernière journée complète à Gokarna pour faire ce qui vous plaît. Flânez dans les boutiques pour trouver des souvenirs artisanaux, revisitez votre plage préférée ou simplement savourez l'ambiance unique de la ville. Une journée pour créer vos derniers souvenirs.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🛍️ <strong>Shopping de souvenirs</strong>: Explorez les petites boutiques du marché de Gokarna pour dénicher des objets artisanaux, des bijoux, des vêtements ou des épices locales.</li>
+                            
+                                <li>🚶‍♀️ <strong>Dernière balade sur la plage</strong>: Profitez d'une dernière promenade sur la plage de votre choix, pour admirer le coucher de soleil et vous imprégner de l'atmosphère paisible de Gokarna.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1"> bargaining Marchandage</p>
+                                <p class="text-gray-700">Le marchandage est une pratique courante dans les marchés indiens, n'hésitez pas à négocier les prix avec le sourire.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Idées cadeaux</p>
+                                <p class="text-gray-700">Les huiles ayurvédiques, les tissus en coton, les statues de divinités et les bijoux en argent sont d'excellents souvenirs.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Retour vers Goa</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Il est temps de quitter la sérénité de Gokarna. Un transfert vous ramènera à Goa, où vous pourrez passer une dernière nuit près de l'aéroport, ou profiter d'une dernière soirée sur une plage plus animée. Préparez-vous pour le vol de retour le lendemain.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🚗 <strong>Transfert Gokarna-Goa</strong>: Reprenez la route vers Goa, profitant une dernière fois des paysages côtiers du Karnataka.</li>
+                            
+                                <li>🛏️ <strong>Nuit à Goa</strong>: Installez-vous dans un hôtel près de l'aéroport de Goa pour faciliter votre départ le lendemain matin.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Timing</p>
+                                <p class="text-gray-700">Prévoyez suffisamment de temps pour le transfert et l'enregistrement à l'aéroport, surtout si vous avez un vol tôt le matin.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✈️ Confirmation</p>
+                                <p class="text-gray-700">Vérifiez les horaires de votre vol international et confirmez votre transfert aéroport la veille.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Vol retour vers Paris</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un voyage inoubliable en Inde, il est temps de prendre votre vol de retour vers Paris. Emportez avec vous les souvenirs des plages paisibles, des temples sacrés et de la vibrante culture de Gokarna. Votre aventure indienne se termine, mais les souvenirs resteront.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>✈️ <strong>Vol Goa-Paris</strong>: Embarquez pour votre vol international de retour vers Paris, la tête remplie de souvenirs et d'expériences uniques.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Gokarna-inde/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛂 Douanes</p>
+                                <p class="text-gray-700">Préparez vos documents de voyage et soyez prêt pour les formalités douanières à l'arrivée à Paris.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <footer id="pratique" class="bg-white border-t border-gray-200 pt-16 pb-10 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 mb-12">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget vol: </strong>1000€/pers (Vol international Paris-Goa A/R, classe économique)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget transports: </strong>180€/pers (Transferts aéroport, taxis, tuk-tuks, location scooter, bus locaux)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget repas: </strong>250€/pers (Environ 25€/jour pour 10 jours, repas locaux et quelques restaurants plus élaborés)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget logement: </strong>400€/pers (Environ 40€/nuit pour 10 nuits, guesthouses et hôtels de catégorie moyenne)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget activités: </strong>70€/pers (Cours de yoga, cuisine, excursions Yana/Mirjan, croisière, entrées temples)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed">Les périodes idéales pour ce séjour sont les mois de octobre à mars.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>🧳</span> À savoir
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-3">
+
+                        <li><strong>💰 :</strong> La monnaie locale est la Roupie Indienne (INR). Prévoyez de changer de l'argent ou de retirer dans les distributeurs.</li>
+                    
+                        <li><strong>🗣️ :</strong> La langue officielle est l'hindi, mais l'anglais est largement parlé dans les zones touristiques et par les commerçants.</li>
+                    
+                        <li><strong>⏰ :</strong> Le décalage horaire avec la France est de +3h30 en hiver et +2h30 en été.</li>
+                    
+                        <li><strong>🌶️ :</strong> La cuisine indienne est riche et variée. Soyez vigilant avec l'eau (toujours en bouteille) et les aliments crus non lavés.</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2"><span>🔗</span> Liens Utiles</h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://shepper1.github.io/Gokarna inde/map.html" target="_blank" class="hover:underline flex items-center gap-2"><strong>🗺️ Carte</strong></a></li>
+                    
+                        <li><a href="https://www.incredibleindia.org/" target="_blank" class="hover:underline flex items-center gap-2"><strong>📘 Incredible India</strong></a></li>
+                    
+                        <li><a href="https://www.accuweather.com/fr/in/gokarna/201974/weather-forecast/201974" target="_blank" class="hover:underline flex items-center gap-2"><strong>🌤️ Météo Inde</strong></a></li>
+                    
+                        <li><a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank" class="hover:underline flex items-center gap-2"><strong>🛂 Indian e-Visa</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="text-center border-t border-gray-100 pt-8">
+            <p class="font-serif text-2xl text-template-roche mb-2">Gokarna inde</p>
+            <p class="text-xs text-gray-400">© 2025 - Roadmap</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Gestion de l'affichage du menu au scroll
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // 2. Détection de l'étape active
+        const observerOptions = {
+            root: null,
+            rootMargin: '-40% 0px -60% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+
+                    document.querySelectorAll('.nav-item-desktop').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (activeId.includes('jour') && linkHref === 'jour-1') {
+                            link.classList.add('text-template-ocre');
+                        } else if (activeId === 'pratique' && linkHref === 'pratique') {
+                            link.classList.add('text-template-ocre');
+                        } else {
+                            link.classList.remove('text-template-ocre');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('div[id^="jour-"], footer#pratique').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
