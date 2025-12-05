@@ -1,0 +1,358 @@
+{
+  "pays": "Inde",
+  "drapeau": "🇮🇳",
+  "symbole": "🐘",
+  "titre": "Gokarna: Évasion Spirituelle et Plages Secrètes du Karnataka",
+  "budget_total": "2100€",
+  "duree": "12 jours uniquement",
+  "temps_vol": "Environ 10-12h de vol",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "✈️",
+      "titre": "Départ de Paris",
+      "legende": "Votre aventure indienne commence à l'aéroport de Paris. Préparez-vous pour un long vol vers l'Inde, une transition douce vers un monde de couleurs et de spiritualité. Profitez du voyage pour vous imprégner de l'excitation du départ.",
+      "lieu": "Paris - Vol vers l'Inde",
+      "activites": [
+        "✈️ <strong>Vol Paris-Goa</strong>: Embarquez pour votre vol international depuis Paris, direction l'aéroport de Goa (Dabolim), porte d'entrée vers le sud de l'Inde."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Formalités",
+          "texte": "Assurez-vous d'avoir votre visa indien (e-Visa est le plus courant) et votre passeport valides avant le départ."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🛬",
+      "titre": "Arrivée à Gokarna et immersion douce",
+      "legende": "Après votre arrivée à Goa, un transfert vous mènera à Gokarna, une ville côtière sacrée. Prenez le temps de vous installer et de ressentir l'atmosphère paisible. Une première balade légère sur la plage vous permettra de vous acclimater et de vous imprégner de la sérénité locale.",
+      "lieu": "Gokarna",
+      "activites": [
+        "🚗 <strong>Transfert Goa-Gokarna</strong>: Après l'atterrissage à Goa, un taxi ou un bus vous conduira à Gokarna, un trajet d'environ 3 heures offrant déjà un aperçu des paysages du Karnataka.",
+        "🛏️ <strong>Installation et détente</strong>: Installez-vous dans votre hébergement et prenez un moment pour vous reposer et vous rafraîchir après le voyage."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Conseil",
+          "texte": "Négociez toujours le prix des taxis et tuk-tuks avant de monter. Les applications comme Ola ou Uber sont parfois disponibles dans les grandes villes."
+        },
+        {
+          "symbole": "💧",
+          "titre": "Hydratation",
+          "texte": "Buvez beaucoup d'eau en bouteille pour rester hydraté, surtout les premiers jours pour s'adapter au climat."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🏖️",
+      "titre": "Les plages emblématiques de Gokarna",
+      "legende": "Découvrez les plages iconiques de Gokarna, accessibles par de petits sentiers côtiers ou en bateau. Chaque plage offre une ambiance unique, de la forme sacrée d'Om Beach aux criques isolées de Half Moon et Paradise Beach. Une journée de marche et de baignade vous attend.",
+      "lieu": "Gokarna",
+      "activites": [
+        "🚶‍♀️ <strong>Trek des plages</strong>: Partez en randonnée de Om Beach à Half Moon Beach, puis à Paradise Beach, en empruntant les sentiers côtiers offrant des vues spectaculaires sur la mer d'Arabie.",
+        "🧘‍♀️ <strong>Baignade et relaxation</strong>: Profitez des eaux calmes pour une baignade rafraîchissante et détendez-vous sur le sable doré de ces plages préservées."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Équipement",
+          "texte": "Prévoyez de bonnes chaussures de marche pour le trek entre les plages et de la crème solaire biodégradable."
+        },
+        {
+          "symbole": "🗺️",
+          "titre": "Navigation",
+          "texte": "Les sentiers peuvent être un peu rudes, mais sont bien indiqués. Vous pouvez aussi opter pour un bateau-taxi entre les plages."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🕉️",
+      "titre": "Spiritualité et culture locale",
+      "legende": "Plongez au cœur de la spiritualité de Gokarna en visitant le célèbre temple de Mahabaleshwar, un lieu de pèlerinage hindou. Explorez ensuite le centre-ville animé et le Koti Teertha, un bassin sacré. Une journée riche en découvertes culturelles et religieuses.",
+      "lieu": "Gokarna",
+      "activites": [
+        "🙏 <strong>Visite du Temple Mahabaleshwar</strong>: Explorez ce temple millénaire dédié à Shiva, l'un des sept Mukti Sthalas (lieux de libération) du Karnataka, et observez les rituels quotidiens.",
+        "🚶‍♂️ <strong>Découverte du centre-ville et Koti Teertha</strong>: Flânez dans les rues étroites du marché, imprégnez-vous de l'ambiance locale et visitez le Koti Teertha, un grand bassin sacré entouré de petits temples."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "👗",
+          "titre": "Tenue",
+          "texte": "Pour la visite des temples, prévoyez des vêtements couvrant les épaules et les genoux par respect pour les lieux sacrés."
+        },
+        {
+          "symbole": "📸",
+          "titre": "Photographie",
+          "texte": "Demandez toujours la permission avant de photographier des personnes, surtout dans les lieux de culte."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🧘‍♀️",
+      "titre": "Bien-être et saveurs locales",
+      "legende": "Gokarna est aussi un lieu propice au bien-être. Participez à une séance de yoga matinale pour harmoniser corps et esprit, puis explorez les saveurs de la cuisine indienne avec un cours de cuisine. Une journée pour nourrir l'âme et les papilles.",
+      "lieu": "Gokarna",
+      "activites": [
+        "🧘‍♀️ <strong>Cours de yoga matinal</strong>: Commencez votre journée par une séance de yoga sur la plage ou dans un ashram, profitant du calme matinal et de la brise marine.",
+        "🌶️ <strong>Cours de cuisine indienne</strong>: Apprenez à préparer des plats locaux végétariens et épicés, une immersion délicieuse dans la culture culinaire du Karnataka."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🥦",
+          "titre": "Alimentation",
+          "texte": "Gokarna est majoritairement végétarienne, avec une abondance de plats délicieux et sains. N'hésitez pas à goûter les thalis locaux."
+        },
+        {
+          "symbole": "💸",
+          "titre": "Pourboires",
+          "texte": "Le pourboire n'est pas obligatoire mais apprécié dans les restaurants et pour les services. Quelques roupies suffisent."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "⛰️",
+      "titre": "Excursion aux grottes de Yana",
+      "legende": "Aventurez-vous hors des sentiers battus pour une excursion aux mystérieuses grottes de Yana. Ces formations rocheuses calcaires, entourées d'une dense forêt, sont un spectacle naturel impressionnant et un lieu de pèlerinage. Une journée d'exploration au cœur de la nature.",
+      "lieu": "Yana (excursion depuis Gokarna)",
+      "activites": [
+        "🚗 <strong>Route vers Yana</strong>: Louez un scooter ou un taxi pour une journée d'excursion vers Yana, un trajet pittoresque à travers la campagne du Karnataka.",
+        "🪨 <strong>Exploration des grottes de Yana</strong>: Admirez les deux immenses monolithes de roche noire, Bhairaveshwara Shikara et Mohini Shikara, et explorez les grottes sacrées qui s'y trouvent."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Accessibilité",
+          "texte": "L'accès aux grottes implique une petite marche en forêt, prévoyez des chaussures confortables et de l'eau."
+        },
+        {
+          "symbole": "🛵",
+          "titre": "Location de scooter",
+          "texte": "La location d'un scooter est un excellent moyen d'explorer les environs, mais soyez vigilant sur les routes indiennes."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🏰",
+      "titre": "Histoire et cascades",
+      "legende": "Cette journée vous emmène à la découverte de l'histoire locale avec le fort de Mirjan, un vestige architectural fascinant. Ensuite, rafraîchissez-vous aux chutes d'Apsarakonda, un lieu paisible et verdoyant, idéal pour une pause nature. Un mélange parfait d'histoire et de beauté naturelle.",
+      "lieu": "Mirjan & Apsarakonda (excursion depuis Gokarna)",
+      "activites": [
+        "🏰 <strong>Visite du Fort de Mirjan</strong>: Explorez les ruines de ce fort historique du 16ème siècle, témoin de la riche histoire de la région et offrant une atmosphère sereine.",
+        "💧 <strong>Détente aux chutes d'Apsarakonda</strong>: Profitez de la fraîcheur des cascades et du petit bassin naturel pour une baignade ou simplement un moment de détente au milieu de la verdure."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🌳",
+          "titre": "Nature",
+          "texte": "Les environs d'Apsarakonda sont parfaits pour une courte promenade et l'observation de la faune locale."
+        },
+        {
+          "symbole": "☀️",
+          "titre": "Protection",
+          "texte": "Le soleil peut être intense, n'oubliez pas chapeau, lunettes de soleil et protection solaire."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "⛵",
+      "titre": "Croisière et détente côtière",
+      "legende": "Profitez d'une journée plus relaxante en explorant la côte de Gokarna depuis la mer. Une croisière au coucher du soleil vous offrira des vues imprenables et peut-être même l'occasion d'apercevoir des dauphins. Terminez la journée par un dîner les pieds dans le sable.",
+      "lieu": "Gokarna",
+      "activites": [
+        "⛵ <strong>Croisière au coucher du soleil</strong>: Embarquez pour une croisière relaxante le long de la côte, admirant les plages depuis un autre angle et cherchant les dauphins qui nagent parfois dans ces eaux.",
+        "🍽️ <strong>Dîner sur la plage</strong>: Savourez un délicieux repas de fruits de mer frais dans l'un des nombreux shacks de plage, les pieds dans le sable, sous les étoiles."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "🐬",
+          "titre": "Observation",
+          "texte": "Les meilleures chances d'apercevoir des dauphins sont tôt le matin ou au coucher du soleil."
+        },
+        {
+          "symbole": "💰",
+          "titre": "Négociation",
+          "texte": "N'hésitez pas à négocier le prix de la croisière avec les pêcheurs locaux pour obtenir le meilleur tarif."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🏄‍♀️",
+      "titre": "Activités nautiques et plage de Kudle",
+      "legende": "La plage de Kudle, avec son ambiance décontractée, est parfaite pour une journée d'activités nautiques ou simplement pour se prélasser. Essayez le paddle ou le kayak, ou laissez-vous tenter par un massage ayurvédique. Une journée dédiée au plaisir et à la détente au bord de l'eau.",
+      "lieu": "Gokarna (Plage de Kudle)",
+      "activites": [
+        "🛶 <strong>Paddle ou Kayak à Kudle Beach</strong>: Louez un paddle ou un kayak pour explorer les eaux calmes de Kudle Beach, une activité amusante et rafraîchissante.",
+        "💆‍♀️ <strong>Massage Ayurvédique</strong>: Offrez-vous un massage ayurvédique traditionnel dans l'un des centres de bien-être de la plage, pour une relaxation profonde et une revitalisation."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🌊",
+          "titre": "Sécurité",
+          "texte": "Assurez-vous que l'équipement de sports nautiques est en bon état et que les conditions de mer sont calmes avant de vous aventurer."
+        },
+        {
+          "symbole": "☀️",
+          "titre": "Heures de pointe",
+          "texte": "Kudle Beach est très populaire, arrivez tôt le matin pour profiter du calme avant la foule."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🛍️",
+      "titre": "Journée libre et souvenirs",
+      "legende": "Profitez de cette dernière journée complète à Gokarna pour faire ce qui vous plaît. Flânez dans les boutiques pour trouver des souvenirs artisanaux, revisitez votre plage préférée ou simplement savourez l'ambiance unique de la ville. Une journée pour créer vos derniers souvenirs.",
+      "lieu": "Gokarna",
+      "activites": [
+        "🛍️ <strong>Shopping de souvenirs</strong>: Explorez les petites boutiques du marché de Gokarna pour dénicher des objets artisanaux, des bijoux, des vêtements ou des épices locales.",
+        "🚶‍♀️ <strong>Dernière balade sur la plage</strong>: Profitez d'une dernière promenade sur la plage de votre choix, pour admirer le coucher de soleil et vous imprégner de l'atmosphère paisible de Gokarna."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": " bargaining",
+          "titre": "Marchandage",
+          "texte": "Le marchandage est une pratique courante dans les marchés indiens, n'hésitez pas à négocier les prix avec le sourire."
+        },
+        {
+          "symbole": "🎁",
+          "titre": "Idées cadeaux",
+          "texte": "Les huiles ayurvédiques, les tissus en coton, les statues de divinités et les bijoux en argent sont d'excellents souvenirs."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🛫",
+      "titre": "Retour vers Goa",
+      "legende": "Il est temps de quitter la sérénité de Gokarna. Un transfert vous ramènera à Goa, où vous pourrez passer une dernière nuit près de l'aéroport, ou profiter d'une dernière soirée sur une plage plus animée. Préparez-vous pour le vol de retour le lendemain.",
+      "lieu": "Gokarna - Goa",
+      "activites": [
+        "🚗 <strong>Transfert Gokarna-Goa</strong>: Reprenez la route vers Goa, profitant une dernière fois des paysages côtiers du Karnataka.",
+        "🛏️ <strong>Nuit à Goa</strong>: Installez-vous dans un hôtel près de l'aéroport de Goa pour faciliter votre départ le lendemain matin."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Timing",
+          "texte": "Prévoyez suffisamment de temps pour le transfert et l'enregistrement à l'aéroport, surtout si vous avez un vol tôt le matin."
+        },
+        {
+          "symbole": "✈️",
+          "titre": "Confirmation",
+          "texte": "Vérifiez les horaires de votre vol international et confirmez votre transfert aéroport la veille."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🏡",
+      "titre": "Vol retour vers Paris",
+      "legende": "Après un voyage inoubliable en Inde, il est temps de prendre votre vol de retour vers Paris. Emportez avec vous les souvenirs des plages paisibles, des temples sacrés et de la vibrante culture de Gokarna. Votre aventure indienne se termine, mais les souvenirs resteront.",
+      "lieu": "Goa - Vol vers Paris",
+      "activites": [
+        "✈️ <strong>Vol Goa-Paris</strong>: Embarquez pour votre vol international de retour vers Paris, la tête remplie de souvenirs et d'expériences uniques."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🛂",
+          "titre": "Douanes",
+          "texte": "Préparez vos documents de voyage et soyez prêt pour les formalités douanières à l'arrivée à Paris."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "1000€/pers (Vol international Paris-Goa A/R, classe économique)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "180€/pers (Transferts aéroport, taxis, tuk-tuks, location scooter, bus locaux)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "250€/pers (Environ 25€/jour pour 10 jours, repas locaux et quelques restaurants plus élaborés)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "400€/pers (Environ 40€/nuit pour 10 nuits, guesthouses et hôtels de catégorie moyenne)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "70€/pers (Cours de yoga, cuisine, excursions Yana/Mirjan, croisière, entrées temples)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de octobre à mars.",
+      "symbole": "☀️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "La monnaie locale est la Roupie Indienne (INR). Prévoyez de changer de l'argent ou de retirer dans les distributeurs.",
+      "symbole": "💰"
+    },
+    {
+      "titre": "La langue officielle est l'hindi, mais l'anglais est largement parlé dans les zones touristiques et par les commerçants.",
+      "symbole": "🗣️"
+    },
+    {
+      "titre": "Le décalage horaire avec la France est de +3h30 en hiver et +2h30 en été.",
+      "symbole": "⏰"
+    },
+    {
+      "titre": "La cuisine indienne est riche et variée. Soyez vigilant avec l'eau (toujours en bouteille) et les aliments crus non lavés.",
+      "symbole": "🌶️"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Informations officielles sur le tourisme en Inde",
+      "titre": "Incredible India",
+      "url": "https://www.incredibleindia.org/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Prévisions météo pour Gokarna",
+      "titre": "Météo Inde",
+      "url": "https://www.accuweather.com/fr/in/gokarna/201974/weather-forecast/201974",
+      "symbole": "🌤️"
+    },
+    {
+      "legende": "Informations sur les visas pour l'Inde",
+      "titre": "Indian e-Visa",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
+      "symbole": "🛂"
+    }
+  ]
+}
